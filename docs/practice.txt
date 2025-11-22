@@ -1,0 +1,207 @@
+EmacsBoost practice file
+=========================
+
+This file is used to practice basic and advanced Emacs editing commands.
+You can move around, edit text, search and replace, record macros,
+try rectangle commands and many other features.
+
+The word editor appears several times in this paragraph. Emacs is a very
+powerful editor. Some people call it a text editor, others call it a
+programmable editor or even an operating system disguised as an editor.
+When you are done with these exercises, you will probably feel that your
+editor has become a true text processor.
+
+Try to notice   how    extra   spaces   look in this sentence.  Some words
+have   double   or   triple spaces before or after them.  Clean them up
+so that the sentence uses normal spacing only.
+
+Here is a mixed case paragraph about your favorite hobby. maybe you like
+programming, or Playing piano, or hiking in the Mountains. emacs can help
+you keep notes, Plan trips, and write code. use this text to practice
+uppercasing, lowercasing and Capitalizing words with Emacs commands.
+
+
+Shopping list
+-------------
+
+milk
+Eggs
+butter
+dark chocolate
+pasta
+tomatoes
+olive oil
+Coffee
+butter
+MILK
+
+Use this list to practice:
+- moving by words and lines
+- changing case of words
+- sorting lines
+- removing duplicate lines
+- recording and replaying macros
+
+
+Short poem or quote
+-------------------
+
+the cursor moves, the buffer stays
+keystrokes dance in quiet ways
+from line to line, from word to word
+silence kept, yet commands heard
+
+
+List of random words
+--------------------
+
+banana
+apple
+orange
+kiwi
+apple
+mango
+grape
+banana
+pear
+fig
+grapefruit
+kiwi
+plum
+plum
+date
+
+Use this block to practice sort-lines and delete-duplicate-lines.
+
+
+Columnar data for rectangle editing
+-----------------------------------
+
+ID   Name              Language      Score
+001  Alice Johnson     Python        87
+002  Bob Smith         C++           92
+003  Carla Gomez       Emacs Lisp    78
+004  Daniel Ito        Java          88
+005  Eva Müller        Rust          95
+006  Farid Khan        Python        83
+007  Grace Lee         JavaScript    90
+008  Henry O'Neil      Emacs Lisp    80
+
+Hints:
+- Add a prefix like "# " to all data lines using a rectangle command.
+- Insert sequential numbers at the beginning of each line.
+- Align the Language column differently.
+- Try adding a timestamp at the start of each line with a macro.
+
+
+Email addresses in inconsistent formats
+---------------------------------------
+
+John Doe <john.doe@example.com>
+jane.smith@example.org
+"Boss, Big" <big.boss@corporate.example>
+lucy@example.com (Lucy)
+martin dupont <martin.dupont@example.fr>
+ALICE@example.com
+bob.builder at example dot com
+No Name <noname@example.net>
+first.last@example.com
+J. Random Hacker <jrh@example.edu>
+
+Use this section to practice:
+- search and replace
+- keyboard macros that normalize email formats
+- kill and yank operations
+- rectangle edits on the domain part
+
+
+Messy paragraph for narrowing, filling and cleaning
+---------------------------------------------------
+
+This paragraph is intentionally written with
+strange line breaks, so that you can practice
+filling and refilling text with M-q. The goal is
+to make the paragraph look clean and nicely
+wrapped at a reasonable fill column. While you are
+editing, try to narrow to this region only, then
+widen again when you are done. Also feel free to
+insert additional sentences about why you like
+Emacs as your main editor for daily work.
+
+
+Tiny Python snippet
+-------------------
+
+def add(a,  b):
+    """Return the sum of a and b."""
+    total = a  +  b
+    return  total
+
+
+def greet(name):
+    message = "Hello, "  +  name + "!"
+    print(message)
+
+
+if __name__ == "__main__":
+    result = add(2,  3)
+    greet("Emacs user")
+    print("Result:",   result)
+
+Use this code to:
+- move by words, symbols and lines
+- practice indentation changes
+- try commenting and uncommenting regions
+- experiment with macros that adjust spacing around operators
+
+
+Tiny Emacs Lisp snippet
+-----------------------
+
+(defun emacs-boost-hello ()
+  "Simple function used for EmacsBoost practice."
+  (interactive)
+  (message "Hello from EmacsBoost practice file!"))
+
+(defun emacs-boost-add (x y)
+  "Return the sum of X and Y."
+  (+ x y))
+
+;; Try evaluating these functions, changing their names,
+;; and adding your own variants.
+
+
+Org like checklist (plain text)
+-------------------------------
+
+[ ] Install a new theme
+[ ] Enable which-key mode
+[ ] Configure avy for quick navigation
+[ ] Create a simple yasnippet
+[ ] Set up an Emacs server and use emacsclient
+[ ] Learn one new keybinding today
+[ ] Review all exercises at the end of the week
+
+Use this section to:
+- toggle the brackets manually
+- practice macros that turn [ ] into [X]
+- search for unfinished items
+
+
+Mixed language paragraph
+------------------------
+
+Emacs peut aussi servir pour écrire en plusieurs langues.
+You can mix French and English in the same buffer.
+Ceci te permet de pratiquer les mouvements par mots,
+les commandes de recherche, et les remplacements
+sélectifs sur certaines expressions seulement.
+
+
+End of practice file
+--------------------
+
+When you reach this line, you have explored every section of
+practice.txt. Feel free to duplicate blocks, insert new ones,
+break the formatting on purpose and then try to repair it using
+the Emacs skills you are learning.
