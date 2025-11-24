@@ -1,28 +1,31 @@
-EmacsBoost practice file
-=========================
+# Hey Emacs, this is a -*- org -*- file ...
+#+TITLE:     Fichier d'entraînement EmacsBoost
 
-This file is used to practice basic and advanced Emacs editing commands.
-You can move around, edit text, search and replace, record macros,
-try rectangle commands and many other features.
+Ce fichier est utilisé pour s'exercer aux commandes d'édition de base et
+avancées d'Emacs.  Tu peux te déplacer, modifier du texte, chercher et
+remplacer, enregistrer des macros, essayer les commandes sur les rectangles et
+bien d'autres fonctionnalités.
 
-The word editor appears several times in this paragraph. Emacs is a very
-powerful editor. Some people call it a text editor, others call it a
-programmable editor or even an operating system disguised as an editor.
-When you are done with these exercises, you will probably feel that your
-editor has become a true text processor.
+Le mot éditeur apparaît plusieurs fois dans ce paragraphe. Emacs est un très
+puissant éditeur. Certaines personnes l'appellent un éditeur de texte, d'autres
+l'appellent un éditeur programmable ou même un système d'exploitation déguisé en
+éditeur.  Quand tu auras terminé ces exercices, tu auras probablement
+l'impression que ton éditeur est devenu un véritable traitement de texte.
 
-Try to notice   how    extra   spaces   look in this sentence.  Some words
-have   double   or   triple spaces before or after them.  Clean them up
-so that the sentence uses normal spacing only.
+Essaie de remarquer   comment    les espaces   supplémentaires   apparaissent
+dans cette phrase.  Certains mots ont   des   doubles   ou   triples espaces
+avant ou après eux.  Nettoie tout cela pour que la phrase n'utilise plus qu'un
+espacement normal.
 
-Here is a mixed case paragraph about your favorite hobby. maybe you like
-programming, or Playing piano, or hiking in the Mountains. emacs can help
-you keep notes, Plan trips, and write code. use this text to practice
-uppercasing, lowercasing and Capitalizing words with Emacs commands.
+Voici un paragraphe avec des majuscules et minuscules mélangées à propos de ton
+passe-temps favori. peut-être que tu aimes programmer, ou Jouer du piano, ou
+faire de la randonnée en Montagne. emacs peut t'aider à prendre des notes,
+Planifier des voyages, et écrire du code. utilise ce texte pour t'exercer
+à mettre les mots en majuscules, minuscules et Capitaliser les mots avec les
+commandes Emacs.
 
 
-Shopping list
--------------
+* Liste de courses
 
 milk
 Eggs
@@ -35,16 +38,15 @@ Coffee
 butter
 MILK
 
-Use this list to practice:
-- moving by words and lines
-- changing case of words
-- sorting lines
-- removing duplicate lines
-- recording and replaying macros
+Utilise cette liste pour t'exercer à :
+- te déplacer par mots et par lignes
+- changer la casse des mots
+- trier les lignes
+- supprimer les lignes en double
+- enregistrer et rejouer des macros
 
 
-Short poem or quote
--------------------
+* Court poème ou citation
 
 the cursor moves, the buffer stays
 keystrokes dance in quiet ways
@@ -52,8 +54,7 @@ from line to line, from word to word
 silence kept, yet commands heard
 
 
-List of random words
---------------------
+* Liste de mots aléatoires
 
 banana
 apple
@@ -71,11 +72,10 @@ plum
 plum
 date
 
-Use this block to practice sort-lines and delete-duplicate-lines.
+Utilise ce bloc pour t'exercer à sort-lines et delete-duplicate-lines.
 
 
-Columnar data for rectangle editing
------------------------------------
+* Données en colonnes pour édition par rectangle
 
 ID   Name              Language      Score
 001  Alice Johnson     Python        87
@@ -87,15 +87,15 @@ ID   Name              Language      Score
 007  Grace Lee         JavaScript    90
 008  Henry O'Neil      Emacs Lisp    80
 
-Hints:
-- Add a prefix like "# " to all data lines using a rectangle command.
-- Insert sequential numbers at the beginning of each line.
-- Align the Language column differently.
-- Try adding a timestamp at the start of each line with a macro.
+Indications :
+- Ajoute un préfixe comme "# " à toutes les lignes de données avec une commande
+  sur les rectangles.
+- Insère des numéros séquentiels au début de chaque ligne.
+- Aligne la colonne Language différemment.
+- Essaie d'ajouter un horodatage au début de chaque ligne avec une macro.
 
 
-Email addresses in inconsistent formats
----------------------------------------
+* Adresses email dans des formats incohérents
 
 John Doe <john.doe@example.com>
 jane.smith@example.org
@@ -108,30 +108,29 @@ No Name <noname@example.net>
 first.last@example.com
 J. Random Hacker <jrh@example.edu>
 
-Use this section to practice:
-- search and replace
-- keyboard macros that normalize email formats
-- kill and yank operations
-- rectangle edits on the domain part
+Utilise cette section pour t'exercer à :
+- la recherche et le remplacement
+- des macros clavier qui normalisent les formats d'email
+- les opérations de coupe et collage (kill et yank)
+- les éditions en rectangle sur la partie domaine
 
 
-Messy paragraph for narrowing, filling and cleaning
----------------------------------------------------
+* Paragraphe désordonné pour narrowing, remplissage et nettoyage
 
-This paragraph is intentionally written with
-strange line breaks, so that you can practice
-filling and refilling text with M-q. The goal is
-to make the paragraph look clean and nicely
-wrapped at a reasonable fill column. While you are
-editing, try to narrow to this region only, then
-widen again when you are done. Also feel free to
-insert additional sentences about why you like
-Emacs as your main editor for daily work.
+Ce paragraphe est volontairement écrit avec
+des retours à la ligne étranges, afin que tu puisses t'exercer
+à remplir et re-remplir le texte avec M-q. Le but est
+de rendre le paragraphe propre et bien
+ajusté à une largeur de ligne raisonnable. Pendant que tu
+édites, essaie de restreindre l'édition à cette région seulement,
+puis d'élargir à nouveau quand tu as terminé. N'hésite pas non plus
+à insérer des phrases supplémentaires sur les raisons pour lesquelles tu
+apprécies Emacs comme éditeur principal pour ton travail quotidien.
 
 
-Tiny Python snippet
--------------------
+* Petit extrait de code Python
 
+#+begin_src python
 def add(a,  b):
     """Return the sum of a and b."""
     total = a  +  b
@@ -147,17 +146,18 @@ if __name__ == "__main__":
     result = add(2,  3)
     greet("Emacs user")
     print("Result:",   result)
+#+end_src
 
-Use this code to:
-- move by words, symbols and lines
-- practice indentation changes
-- try commenting and uncommenting regions
-- experiment with macros that adjust spacing around operators
+Utilise ce code pour :
+- te déplacer par mots, symboles et lignes
+- t'exercer à modifier l'indentation
+- essayer de commenter et décommenter des régions
+- expérimenter avec des macros qui ajustent l'espacement autour des opérateurs
 
 
-Tiny Emacs Lisp snippet
------------------------
+* Petit extrait Emacs Lisp
 
+#+begin_src emacs-lisp
 (defun emacs-boost-hello ()
   "Simple function used for EmacsBoost practice."
   (interactive)
@@ -169,27 +169,26 @@ Tiny Emacs Lisp snippet
 
 ;; Try evaluating these functions, changing their names,
 ;; and adding your own variants.
+#+end_src
 
 
-Org like checklist (plain text)
--------------------------------
+* Liste de tâches façon Org (texte simple)
 
-[ ] Install a new theme
-[ ] Enable which-key mode
-[ ] Configure avy for quick navigation
-[ ] Create a simple yasnippet
-[ ] Set up an Emacs server and use emacsclient
-[ ] Learn one new keybinding today
-[ ] Review all exercises at the end of the week
+[ ] Installer un nouveau thème
+[ ] Activer which-key mode
+[ ] Configurer avy pour une navigation rapide
+[ ] Créer un simple yasnippet
+[ ] Mettre en place un serveur Emacs et utiliser emacsclient
+[ ] Apprendre aujourd'hui un nouveau raccourci clavier
+[ ] Revoir tous les exercices à la fin de la semaine
 
-Use this section to:
-- toggle the brackets manually
-- practice macros that turn [ ] into [X]
-- search for unfinished items
+Utilise cette section pour :
+- basculer manuellement les crochets
+- t'exercer à des macros qui transforment [ ] en [X]
+- chercher les éléments non terminés
 
 
-Mixed language paragraph
-------------------------
+* Paragraphe en langue mixte
 
 Emacs peut aussi servir pour écrire en plusieurs langues.
 You can mix French and English in the same buffer.
@@ -198,10 +197,9 @@ les commandes de recherche, et les remplacements
 sélectifs sur certaines expressions seulement.
 
 
-End of practice file
---------------------
+* Fin du fichier de pratique
 
-When you reach this line, you have explored every section of
-practice.txt. Feel free to duplicate blocks, insert new ones,
-break the formatting on purpose and then try to repair it using
-the Emacs skills you are learning.
+Lorsque tu atteins cette ligne, tu as exploré chaque section de
+practice.txt. N'hésite pas à dupliquer des blocs, en insérer de nouveaux,
+casser volontairement la mise en forme puis essayer de la réparer en utilisant
+les compétences Emacs que tu es en train d'acquérir.
