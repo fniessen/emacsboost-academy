@@ -12,10 +12,10 @@ l'appellent un éditeur programmable ou même un système d'exploitation déguis
 éditeur.  Quand tu auras terminé ces exercices, tu auras probablement
 l'impression que ton éditeur est devenu un véritable traitement de texte.
 
-Essaie de remarquer   comment    les espaces   supplémentaires   apparaissent
-dans cette phrase.  Certains mots ont   des   doubles   ou   triples espaces
-avant ou après eux.  Nettoie tout cela pour que la phrase n'utilise plus qu'un
-espacement normal.
+Essaie de remarquer   comment    les espaces   supplémentaires
+apparaissent   dans cette phrase.  Certains mots ont   des   doubles   ou
+triples espaces   avant ou après eux.
+Nettoie tout cela pour que la phrase n'utilise plus qu'un espacement normal.
 
 Voici un paragraphe avec des majuscules et minuscules mélangées à propos de ton
 passe-temps favori. peut-être que tu aimes programmer, ou Jouer du piano, ou
@@ -23,7 +23,6 @@ faire de la randonnée en Montagne. emacs peut t'aider à prendre des notes,
 Planifier des voyages, et écrire du code. utilise ce texte pour t'exercer
 à mettre les mots en majuscules, minuscules et Capitaliser les mots avec les
 commandes Emacs.
-
 
 * Liste de courses
 
@@ -37,25 +36,6 @@ olive oil
 Coffee
 butter
 MILK
-
-Utilise cette liste pour t'exercer à :
-- te déplacer par mots et par lignes
-- changer la casse des mots
-- trier les lignes
-- supprimer les lignes en double
-- enregistrer et rejouer des macros
-
-
-* Court poème ou citation
-
-the cursor moves, the buffer stays
-keystrokes dance in quiet ways
-from line to line, from word to word
-silence kept, yet commands heard
-
-
-* Liste de mots aléatoires
-
 banana
 apple
 orange
@@ -72,8 +52,19 @@ plum
 plum
 date
 
-Utilise ce bloc pour t'exercer à sort-lines et delete-duplicate-lines.
+Utilise cette liste pour t'exercer à :
+- te déplacer par mots et par lignes
+- changer la casse des mots
+- trier les lignes
+- supprimer les lignes en double
+- enregistrer et rejouer des macros
 
+* Court poème ou citation
+
+the cursor moves, the buffer stays
+keystrokes dance in quiet ways
+from line to line, from word to word
+silence kept, yet commands heard
 
 * Données en colonnes pour édition par rectangle
 
@@ -94,7 +85,6 @@ Indications :
 - Aligne la colonne Language différemment.
 - Essaie d'ajouter un horodatage au début de chaque ligne avec une macro.
 
-
 * Adresses email dans des formats incohérents
 
 John Doe <john.doe@example.com>
@@ -114,7 +104,6 @@ Utilise cette section pour t'exercer à :
 - les opérations de coupe et collage (kill et yank)
 - les éditions en rectangle sur la partie domaine
 
-
 * Paragraphe désordonné pour narrowing, remplissage et nettoyage
 
 Ce paragraphe est volontairement écrit avec
@@ -126,7 +115,6 @@ ajusté à une largeur de ligne raisonnable. Pendant que tu
 puis d'élargir à nouveau quand tu as terminé. N'hésite pas non plus
 à insérer des phrases supplémentaires sur les raisons pour lesquelles tu
 apprécies Emacs comme éditeur principal pour ton travail quotidien.
-
 
 * Petit extrait de code Python
 
@@ -154,7 +142,6 @@ Utilise ce code pour :
 - essayer de commenter et décommenter des régions
 - expérimenter avec des macros qui ajustent l'espacement autour des opérateurs
 
-
 * Petit extrait Emacs Lisp
 
 #+begin_src emacs-lisp
@@ -171,7 +158,6 @@ Utilise ce code pour :
 ;; and adding your own variants.
 #+end_src
 
-
 * Liste de tâches façon Org (texte simple)
 
 [ ] Installer un nouveau thème
@@ -187,7 +173,6 @@ Utilise cette section pour :
 - t'exercer à des macros qui transforment [ ] en [X]
 - chercher les éléments non terminés
 
-
 * Paragraphe en langue mixte
 
 Emacs peut aussi servir pour écrire en plusieurs langues.
@@ -195,7 +180,6 @@ You can mix French and English in the same buffer.
 Ceci te permet de pratiquer les mouvements par mots,
 les commandes de recherche, et les remplacements
 sélectifs sur certaines expressions seulement.
-
 
 * Fin du fichier de pratique
 
