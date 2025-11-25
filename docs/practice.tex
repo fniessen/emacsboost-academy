@@ -1,0 +1,229 @@
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[french, english]{babel}
+\usepackage{xcolor}
+\usepackage{listings}
+\author{John Doe}
+\date{\today}
+\title{Fichier d'entraînement EmacsBoost}
+\hypersetup{
+ pdfauthor={John Doe},
+ pdftitle={Fichier d'entraînement EmacsBoost},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 30.2 (Org mode 9.7.11)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+Ce fichier est utilisé pour s'exercer aux commandes d'édition de base et
+avancées d'Emacs.  Tu peux te déplacer, modifier du texte, chercher et
+bien d'autres fonctionnalités.
+
+Le mot éditeur apparaît plusieurs fois dans ce paragraphe. Emacs est un très
+puissant éditeur. Certaines personnes l'appellent un éditeur de texte, d'autres
+l'appellent un éditeur programmable ou même un système d'exploitation déguisé en
+éditeur.  Quand tu auras terminé ces exercices, tu auras probablement
+l'impression que ton éditeur est devenu un véritable traitement de texte.
+
+Essaie de remarquer   comment    les espaces   supplémentaires
+apparaissent   dans cette phrase.  Certains mots ont   des   doubles   ou
+triples espaces   avant ou après eux.
+Nettoie tout cela pour que la phrase n'utilise plus qu'un espacement normal.
+
+Voici un paragraphe avec des majuscules et minuscules mélangées à propos de ton
+passe-temps favori. peut-être que tu aimes programmer, ou Jouer du piano, ou
+faire de la randonnée en Montagne. emacs peut t'aider à prendre des notes,
+Planifier des voyages, et écrire du code. utilise ce texte pour t'exercer
+à mettre les mots en majuscules, minuscules et Capitaliser les mots avec les
+commandes Emacs.
+\section{Liste de courses}
+\label{sec:org02d46cf}
+
+milk
+Eggs
+butter
+dark chocolate
+pasta
+tomatoes
+olive oil
+Coffee
+butter
+MILK
+banana
+apple
+orange
+kiwi
+apple
+mango
+grape
+banana
+pear
+fig
+grapefruit
+kiwi
+plum
+plum
+date
+
+Utilise cette liste pour t'exercer à :
+\begin{itemize}
+\item te déplacer par mots et par lignes
+\item changer la casse des mots
+\item trier les lignes
+\item supprimer les lignes en double
+\item enregistrer et rejouer des macros
+\end{itemize}
+\section{Court poème ou citation}
+\label{sec:orgcfd0617}
+
+the cursor moves, the buffer stays
+keystrokes dance in quiet ways
+from line to line, from word to word
+silence kept, yet commands heard
+\section{Données en colonnes pour édition par rectangle}
+\label{sec:orge80c138}
+
+ID   Name              Language      Score
+001  Alice Johnson     Python        87
+002  Bob Smith         C++           92
+003  Carla Gomez       Emacs Lisp    78
+004  Daniel Ito        Java          88
+005  Eva Müller        Rust          95
+006  Farid Khan        Python        83
+007  Grace Lee         JavaScript    90
+008  Henry O'Neil      Emacs Lisp    80
+
+Indications :
+\begin{itemize}
+\item Ajoute un préfixe comme ``\# '' à toutes les lignes de données avec une commande
+sur les rectangles.
+\item Insère des numéros séquentiels au début de chaque ligne.
+\item Aligne la colonne Language différemment.
+\item Essaie d'ajouter un horodatage au début de chaque ligne avec une macro.
+\end{itemize}
+\section{Adresses email dans des formats incohérents}
+\label{sec:org429b62a}
+
+John Doe <john.doe@example.com>
+jane.smith@example.org
+``Boss, Big'' <big.boss@corporate.example>
+lucy@example.com (Lucy)
+martin dupont <martin.dupont@example.fr>
+ALICE@example.com
+bob.builder at example dot com
+No Name <noname@example.net>
+first.last@example.com
+\begin{enumerate}
+\item Random Hacker <jrh@example.edu>
+\end{enumerate}
+
+Utilise cette section pour t'exercer à :
+\begin{itemize}
+\item la recherche et le remplacement
+\item des macros clavier qui normalisent les formats d'email
+\item les opérations de coupe et collage (kill et yank)
+\item les éditions en rectangle sur la partie domaine
+\end{itemize}
+\section{Paragraphe désordonné pour narrowing, remplissage et nettoyage}
+\label{sec:orgc700649}
+
+
+
+
+Emacs Boost
+
+
+contredire
+
+\end\{
+\section{Petit ext}
+\label{sec:orgfc4af6d}
+
+\begin{lstlisting}[language=Python,numbers=none]
+def add(a,  b):
+ """Return the sum of a and b."""
+ total = a  +  b
+ return  total
+
+
+def greet(name):
+    message = "Hello, "  +  name + "!"
+    print(message)
+
+
+if __name__ == "__main__":
+    result = add(2,  3)
+    greet("Emacs user")
+    print("Result:",   result)
+\end{lstlisting}
+
+Utilise ce code pour :
+\begin{itemize}
+\item te déplacer par mots, symboles et lignes
+\item t'exercer à modifier l'indentation
+\item essayer de commenter et décommenter des régions
+\item expérimenter avec des macros qui ajustent l'espacement autour des opérateurs
+\end{itemize}
+\section{Petit extrait Emacs Lisp}
+\label{sec:org46a77c1}
+
+\begin{lstlisting}[language=Lisp,numbers=none]
+(defun emacs-boost-hello ()
+  "Simple function used for EmacsBoost practice."
+  (interactive)
+  (message "Hello from EmacsBoost practice file!"))
+
+(defun emacs-boost-add (x y)
+  "Return the sum of X and Y."
+  (+ x y))
+
+;; Try evaluating these functions, changing their names,
+;; and adding your own variants.
+\end{lstlisting}
+\section{Liste de tâches façon Org (texte simple)}
+\label{sec:orge1eca75}
+
+{[} ] Installer un nouveau thème
+{[} ] Activer which-key mode
+{[} ] Configurer avy pour une navigation rapide
+{[} ] Créer un simple yasnippet
+{[} ] Mettre en place un serveur Emacs et utiliser emacsclient
+{[} ] Apprendre aujourd'hui un nouveau raccourci clavier
+{[} ] Revoir tous les exercices à la fin de la semaine
+
+Utilise cette section pour :
+\begin{itemize}
+\item basculer manuellement les crochets
+\item t'exercer à des macros qui transforment [ ] en [X]
+\item chercher les éléments non terminés
+\end{itemize}
+\section{Paragraphe en langue mixte}
+\label{sec:org1dff6b6}
+
+Emacs peut aussi servir pour écrire en plusieurs langues.
+You can mix French and English in the same buffer.
+Ceci te permet de pratiquer les mouvements par mots,
+les commandes de recherche, et les remplacements
+sélectifs sur certaines expressions seulement.
+\section{Fin du fichier de pratique}
+\label{sec:org97e2622}
+
+Lorsque tu atteins cette ligne, tu as exploré chaque section de
+practice.txt. N'hésite pas à dupliquer des blocs, en insérer de nouveaux,
+casser volontairement la mise en forme puis essayer de la réparer en utilisant
+les compétences Emacs que tu es en train d'acquérir.
+\end{document}
